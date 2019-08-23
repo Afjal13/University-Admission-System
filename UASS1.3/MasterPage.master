@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Button ID="home" runat="server" Text="Home" OnClick="home_Click" BackColor="#003399" BorderStyle="None" Font-Bold="True" Font-Size="Medium" Height="44px" Width="54px" />
+        <asp:Button ID="searchButton" runat="server" Text="Search" OnClick="aboutButton_Click" BackColor="#003399" BorderStyle="None" Font-Bold="True" Font-Size="Medium" Height="44px" Width="70px" />
+        <asp:Button ID="signUpButton" runat="server" Text="SignUp" Width="67px" OnClick="signUpButton_Click" BackColor="#003399" BorderStyle="None" Font-Bold="True" Font-Size="Medium" Height="44px" />
+        <asp:Button ID="signInButton" runat="server" OnClick="signInButton_Click" Text="SignIn" Width="64px" BackColor="#003399" BorderStyle="None" Font-Bold="True" Font-Size="Medium" Height="44px" />
+        <asp:Button ID="noticesButton" runat="server" Text="Notices" BackColor="#003399" BorderStyle="None" Font-Bold="True" Font-Size="Medium" Height="44px" Width="81px" />
+        <asp:Button ID="applyAadmssion" runat="server" OnClick="Button1_Click" Text="Apply For Admission" BackColor="#003399" BorderStyle="None" Font-Bold="True" Font-Size="Medium" Height="44px" Width="172px" />
+        <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+          
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
